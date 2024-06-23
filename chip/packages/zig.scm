@@ -7,12 +7,12 @@
 (define-public zig
   (package
    (name "zig")
-   (version "0.13.0-dev.211+6a65561e3")
+   (version "0.14.0-dev.112+9be9b8ca9")
    (source (origin
             (method url-fetch)
             (uri (string-append "https://ziglang.org/builds/zig-linux-x86_64-" version ".tar.xz"))
             (sha256
-             (base32 "05njpppvyx9pchx9hca1argph2n933cx0h1jn4mzd27pkynksswx"))))
+             (base32 "0xn0d51k28l2lqdnl6rpzhplyfazzww9l5flf5ic7q14d66hqk6j"))))
    (build-system copy-build-system)
    (arguments
     `(#:install-plan '(("." "bin/"))))
